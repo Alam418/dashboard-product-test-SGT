@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ujian Technical Test - Junior Frontend Developer
 
-## Getting Started
+Summit Global Teknologi
 
-First, run the development server:
+Proyek ini adalah dashboard manajemen produk menggunakan **Next.js 14 App Router**, **TypeScript**, dan **Ant Design**, yang terhubung dengan API backend yang telah disediakan.
+
+## ✅ Fitur yang Tersedia
+
+- Melihat daftar produk (dengan pagination & search)
+- Menambahkan produk baru
+- Mengedit produk
+- Menghapus produk (dengan modal konfirmasi)
+- Pencarian produk dengan debounce
+- Menentukan jumlah item per halaman (limit)
+- Tampilan ramah pengguna saat data kosong
+- Loading spinner saat data dimuat
+
+## 🧱 Teknologi yang Digunakan
+
+- Next.js 14 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS
+- Ant Design
+- Axios
+
+## 🚀 Cara Menjalankan
+
+1. Clone repositori:
+
+```bash
+git clone <link-repo>
+cd dashboard-product-test-SGT
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Jalankan server pengembangan:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Buka di browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000/products
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> ⚠️ Pastikan backend berjalan di `http://localhost:8001`.
 
-## Learn More
+## 📌 Catatan
 
-To learn more about Next.js, take a look at the following resources:
+- Saya menambahkan route delete pada controller di backend.
+- Saya tidak menggunakan Firebase.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Terima kasih atas kesempatan untuk mengikuti tes ini 🙏
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
